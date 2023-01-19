@@ -1,0 +1,29 @@
+	/*----- constants -----*/
+array of secret words 
+
+
+	/*----- state variables -----*/
+number of guesses 
+winner 
+length of guess 
+hint
+
+	/*----- cached elements  -----*/
+word 
+image 
+letter 
+
+
+	/*----- event listeners -----*/
+clicking for correct letter 
+
+
+	/*----- functions -----*/
+    player choice will let us know if the players choice is correct or 
+    incorrect for the secret code. 
+
+    when players run out of guesses the game will be over. 
+
+    As each player misses a letter an image disappears 
+
+    if the player successfully guesses word, they are declared winner. 
