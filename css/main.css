@@ -14,16 +14,24 @@ body {
   background-color: orange
   width: 80wv;
   position: absolute;
-  top:50%
-  right:50%
-  padding:  
-
+  top: 50%;
+  right: 50%;
+  transform: translate (-50%, -50%)
+  padding: 3em;
+  border 
 }
   
 main {
     display: grid;
-    grid-template-columns: 
+    grid-template-columns: //add the amount of columns here (check the connect 4)
+    grid-template-rows: //add the amount of rows here 
   }
+
+main * {
+  display: flex
+  justify-content: center;
+  align-items: center;
+}
   
 #spaceman-filmstrip {
     width: 504px;
