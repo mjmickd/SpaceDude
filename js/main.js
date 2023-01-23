@@ -31,8 +31,9 @@ Z://{image of letter}
   /*----- state variables -----*/
 let scores; // the actual 'board'
 let turn; // player 1 or -1 
-let winner; // 1 or -1 = winner; 
-
+let words; //words of the game
+[Judas, Paparrazi, Just Dance, Marry the Night, You and I, The Edge of Glory, Born this Way, Rain on Me ]
+let gaga; // 6 tries for gaga 
 
 
   /*----- cached elements  -----*/
