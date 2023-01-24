@@ -9,10 +9,11 @@ body {
   height: 100vh
   margin: 0
   font-family: 'Raleway' , sans-serif;
-  display: flex 
+  display: flex, 
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("/stage.jpeg");
 
 }
 
@@ -24,16 +25,38 @@ header {
 
 h1 {
   color: green;
-  font-size: 2vmin;
+  font-size: 70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h2 {
+  color:blue;
+  font-size: 30px;
+  display:flex;
+  justify
+}
+
+
+#buttons{
+  display: grid
+  grid-template-columns:repeat(10, 3vmin);
+  grid-template-rows:repeat (3, 3vmin);
+  gap: 1vmin
 }
 
 button {
   margin-top: 4vmin;
-  padding: 2vmin;
+  padding: 1vmin;
   font-size: 2vmin;
-  border-radius: 4min;
+  border-radius: 1min;
   border: 0.1vmin solid white;
   color: red;
+  align-items:center; 
+  position:bottom;
+
 }
 main {
     display: grid;

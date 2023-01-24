@@ -1,49 +1,66 @@
   /*----- constants -----*/
-const userInputSection = document.getElementById("user-input-section");
-const newGameButton = document.getElementById("new-game-button");
-const Results = document.getElementById("results");
+const MAX_WRONG= 6
+const WORDS =[
+  "Edge of Glory", 
+  "Bad Romance", 
+  "Judas", 
+  "Alejandro", 
+  "Telephone", 
+  "Applause", 
+  "Paparrazi"
+ ];
+ const IMGS =[
+  "//put your image tags here"
+ ]
+
 
   /*----- state variables -----*/
-let board; //the board of the game 
-let letters; // an array of the letters available 
-let turn; // player 1 or -1 
+let secretWord = '' //the word that AI picks 
+let wrongLetters = 0; // an array of the letters available 
+let guessedWord = []; // guessed word that the player is using 
 let winner; //words of the game
-//[Judas, Paparrazi, Just Dance, Marry the Night, You and I, The Edge of Glory, Born this Way, Rain on Me ]
+let gameStatus;
 
+//what stephanie said: 
+//let answer: ""
+//let mistakes = 0
+//let guessed =[]
+//let wordStatus = null;
+//let gameStatus 
 
   /*----- cached elements  -----*/
-const pResultsEl = //the player results 
-const cResultsEL = // the computer results aka the word they choose?
-const 
+const guessedEL = document.getElementById('guessed-word');
 
+//what stephanie said 
+//const message = document.getElementById('message')
+//const guess = document.getElement('spotLight')
+const letterButtons=[...document.querySelectorAll('section > button')]//see Diego's code in chat 
+const playButton= document.getElementById('playButton')//this was original reset
+//const spaceDude = document.querySelector('img');
   /*----- event listeners -----*/
-
-
+document.querySelector("section").addEventListener("click", handleClick)
+playButton.addEventListener("click", init)
   /*----- functions -----*/
   //initialize all state, then call render()
-init();
 
-//starting the board 
 function init(){
-board =
-}
-  function init(){;
-  
-  letters = [
-    [Q, W, E, R, T, Y, U, I, O, P] // column 0
-    [A, S, D, F, G, H, J, K, L] // column 1
-    [Z, X, C, V, B, N, M] //column 2
-  ];
-  turn = 1; //tell you whose turn it is 
-  word = //this is going to be how you 
-      //incorporate the word that you are guessing 
-  gaga = //the images that will appear as you incorrectly guess   
-  
-  render();
-}
+secretWord = WORDS[Math.random() *WORDS.length].split("");
+wrongGuesses=[]
+wordStatus = secretWord.map(ltr===" " ? " " : "_")
+gameStatus = null;
+render()
+};
+init();
+function handleClick(evt){
+  console.log(evt.target)
+};
 
-  function render(){
-    renderLetters(); //
-    renderWord();
-    renderGaga();
-  }
+function init() {
+  console.log("hello")
+};
+
+function render() {
+guessedWord.txtContent = winner.join("")
+spaceMan.src= 'img/spaceman-${wrongGuesses.jpg';
+}
+  
