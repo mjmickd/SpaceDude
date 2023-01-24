@@ -12,21 +12,17 @@ const WORDS =[
  const IMGS =[
   "//put your image tags here"
  ]
+ 
+ 
+ /*----- state variables -----*/
+ ;
+ let answer: ""
+ let mistakes = 0
+ let wrongGuesses =[]
+ let wordStatus = null;
+ let gameStatus 
 
 
-  /*----- state variables -----*/
-let secretWord = '' //the word that AI picks 
-let wrongLetters = 0; // an array of the letters available 
-let guessedWord = []; // guessed word that the player is using 
-let winner; //words of the game
-let gameStatus;
-
-//what stephanie said: 
-//let answer: ""
-//let mistakes = 0
-//let guessed =[]
-//let wordStatus = null;
-//let gameStatus 
 
   /*----- cached elements  -----*/
 const guessedEL = document.getElementById('guessed-word');
@@ -52,7 +48,17 @@ render()
 };
 init();
 function handleClick(evt){
-  console.log(evt.target)
+  (evt.target.tagName !== 'BUTTON' || wrongGuesses.includes(letter) || WORDS.includes(leter) return));
+  console.log(evt.target.textContent)
+    const letter = evt.target.textContent
+    if(secretWord.includes(ltr)){
+      secretWord.forEach((char, idx) =>{
+        if(char === ltr ) wordStatus[idx] = letter
+      })
+    } else {
+   wrongGuesses.push(letter)   
+  }
+  render()
 };
 
 function init() {
@@ -63,4 +69,5 @@ function render() {
 guessedWord.txtContent = winner.join("")
 spaceMan.src= 'img/spaceman-${wrongGuesses.jpg';
 }
-  
+
+f
