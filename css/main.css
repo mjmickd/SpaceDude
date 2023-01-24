@@ -2,30 +2,42 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: //whatever I want the font family to be 
+  font-family: 'Raleway' , sans-serif;
 }
 
 body {
-  background-color:yellow
-  }
+  height: 100vh
+  margin: 0
+  font-family: 'Raleway' , sans-serif;
+  display: flex 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.container {
-  font-size: 18px;
-  background-color: orange
-  width: 80wv;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate (-50%, -50%)
-  padding: 3em;
-  border 
 }
-  
+
+header {
+  font-size: 3vmin;
+  color: pink;
+  letter-spacing: 1vmin
+}
+
+h1 {
+  color: green;
+  font-size: 2vmin;
+}
+
+button {
+  margin-top: 4vmin;
+  padding: 2vmin;
+  font-size: 2vmin;
+  border-radius: 4min;
+  border: 0.1vmin solid white;
+  color: red;
+}
 main {
     display: grid;
-    grid-template-columns: //add the amount of columns here (check the connect 4)
-    grid-template-rows: //add the amount of rows here 
-  }
+}
 
 main * {
   display: flex
@@ -33,9 +45,3 @@ main * {
   align-items: center;
 }
   
-#spaceman-filmstrip {
-    width: 504px;
-    height: 687px;
-    background-image: url("imgs/spaceman-filmstrip.jpg");
-    background-position-x: 0;
-  }

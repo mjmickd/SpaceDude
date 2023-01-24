@@ -1,12 +1,14 @@
   /*----- constants -----*/
-
+const userInputSection = document.getElementById("user-input-section");
+const newGameButton = document.getElementById("new-game-button");
+const Results = document.getElementById("results");
 
   /*----- state variables -----*/
+let board; //the board of the game 
 let letters; // an array of the letters available 
 let turn; // player 1 or -1 
-let words; //words of the game
-[Judas, Paparrazi, Just Dance, Marry the Night, You and I, The Edge of Glory, Born this Way, Rain on Me ]
-let gaga; // 6 tries for gaga 
+let winner; //words of the game
+//[Judas, Paparrazi, Just Dance, Marry the Night, You and I, The Edge of Glory, Born this Way, Rain on Me ]
 
 
   /*----- cached elements  -----*/
@@ -19,7 +21,13 @@ const
 
   /*----- functions -----*/
   //initialize all state, then call render()
-function init(){;
+init();
+
+//starting the board 
+function init(){
+board =
+}
+  function init(){;
   
   letters = [
     [Q, W, E, R, T, Y, U, I, O, P] // column 0
