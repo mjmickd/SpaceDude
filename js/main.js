@@ -10,20 +10,20 @@ const WORDS =[
   "Paparrazi"
  ];
  const IMGS =[
- "imgs/Lady gaga Meat Suit 0 Small Medium.jpeg",
- "imgs/Lady gaga Meat Suit 1 Small Medium.jpeg",
- "imgs/Lady gaga Meat Suit 2 Medium.jpeg",
- "imgs/Lady gaga Meat Suit 3 Medium.jpeg",
- "imgs/Lady gaga Meat Suit 4 Medium.jpeg",
- "imgs/Lady gaga Meat Suit 5 Medium.jpeg",
- "imgs/Lady Gaga Meat Suit OG  Medium.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-0.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-1.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-2.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-3.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-4.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-5.jpeg",
+ "imgs/Lady-Gaga-Meat-Suit-6.jpeg",
  ]
  
  
  /*----- state variables -----*/
  ;
  let answer = ""
- let wrongGuess = []
+ let wrongGuesses = []
  let wordStatus = null;
  let gameStatus 
 
@@ -32,14 +32,20 @@ const WORDS =[
   /*----- cached elements  -----*/
 const guessedEL = document.getElementById('guessed-word');
 
+
 //what stephanie said 
-const message = document.getElementById('message')
-const wrongGuesses = document.getElement('spotLight')
+const messageEl = document.getElementById('message')
+const wrongGuessesEl = document.getElementById('spotLight')
 //const letterButtons=[...document.querySelectorAll('section > button')]//see Diego's code in chat 
 //const playButton= document.getElementById('playButton')//this was original reset
-//const spaceDude = document.querySelector('img');
-  /*----- event listeners -----*/
-  init();
+const spaceDude = document.querySelector('img');
+/*----- event listeners -----*/
+document.querySelector("section").addEventListener("click", handleClick)
+
+
+/*----- functions -----*/
+//initialize all state, then call render()
+init();
 
   function init(){
   secretWord = WORDS[Math.floor(Math.random() *WORDS.length)].toUpperCase('').split("");
@@ -51,14 +57,6 @@ const wrongGuesses = document.getElement('spotLight')
   render()
   };
 
-document.querySelector("section").addEventListener("click", handleClick)
-playButton.addEventListener("click", init)
-  /*----- functions -----*/
-  //initialize all state, then call render()
-function showImage0(){
-  document.getElementById
-}
-
 function handleClick(evt){
  const ltr = evt.target.textContent
   if (evt.target.tagName !== 'BUTTON' || wrongGuesses.includes(ltr)) return
@@ -69,35 +67,35 @@ function handleClick(evt){
     } else { 
       wrongGuesses.push(ltr)   
     }
+    gameStatus = getGameStatus();
   render();
   }
 
 
 
 function render(){
-  wordGuess.textContent = wordStatus.join('');
-  spaceMan.src ='css/imgs/Lady-gaga-Meat-Suit${wrongGuesses.length}.jpg'
+  wrongGuessesEl.textContent = wordStatus.join('');
+  spaceDude.src =`imgs/Lady-Gaga-Meat-Suit-${wrongGuesses.length}.jpeg`
+  renderMessage()
 }
 
-fuction 
+function getGameStatus(){
+  if(!wordStatus.includes("_")) return "W";
+  if(wrongGuesses.length > MAX_WRONG) return "L";
+  return null;
+}
 
+function renderMessage(){
+  if(gameStatus === "W") {
+    messageEl.textContent = "YAAAS you win"
+  }  else if (gameStatus === "L"){
+    messageEl.textContent = `Sorry, Try again the answer was ${secretWord.join("")}`
+  } else {
+messageEl.textContent = `${MAX_WRONG - wrongGuesses.length} remain, good luck`
+  }
+}
 
-render(){
+render() 
   
-}
-
-// what I found online for a dash function - don't know if it is correct //
-
-//function render() { 
-//for (i = 0; i < chosenWord.length; i++) {
-  //if (chosenWord.charAt(i) == " ") {
-  //  dashes += " ";
-  //} else {
-  //  dashes += "-";
-  //}
-//}
-//}
 
 
-// function render(){
-  spaceman.src = '' 
