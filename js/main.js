@@ -10,15 +10,20 @@ const WORDS =[
   "Paparrazi"
  ];
  const IMGS =[
-  "//put your image tags here"
+ "css/imgs/Lady gaga Meat Suit 0 Small Medium.jpeg",
+ "css/imgs/Lady gaga Meat Suit 1 Small Medium.jpeg",
+ "css/imgs/Lady gaga Meat Suit 2 Medium.jpeg",
+ "css/imgs/Lady gaga Meat Suit 3 Medium.jpeg",
+ "css/imgs/Lady gaga Meat Suit 4 Medium.jpeg",
+ "css/imgs/Lady gaga Meat Suit 5 Medium.jpeg",
+ "css/imgs/Lady Gaga Meat Suit OG  Medium.jpeg",
  ]
  
  
  /*----- state variables -----*/
  ;
  let answer = ""
- let mistakes = 0
- let wrongGuesses = []
+ let wrongGuess = []
  let wordStatus = null;
  let gameStatus 
 
@@ -28,24 +33,29 @@ const WORDS =[
 const guessedEL = document.getElementById('guessed-word');
 
 //what stephanie said 
-//const message = document.getElementById('message')
-//const guess = document.getElement('spotLight')
-const letterButtons=[...document.querySelectorAll('section > button')]//see Diego's code in chat 
-const playButton= document.getElementById('playButton')//this was original reset
+const message = document.getElementById('message')
+const wrongGuess = document.getElement('spotLight')
+//const letterButtons=[...document.querySelectorAll('section > button')]//see Diego's code in chat 
+//const playButton= document.getElementById('playButton')//this was original reset
 //const spaceDude = document.querySelector('img');
   /*----- event listeners -----*/
+  function init(){
+  secretWord = WORDS[Math.random() *WORDS.length].split("");
+  wrongGuesses=[]
+  wordStatus = secretWord.map(ltr===" " ? " " : "_")
+  gameStatus = null;
+  render()
+  };
+  
 document.querySelector("section").addEventListener("click", handleClick)
 playButton.addEventListener("click", init)
   /*----- functions -----*/
   //initialize all state, then call render()
+function showImage0(){
+  document.getElementById
+}
 
-function init(){
-secretWord = WORDS[Math.random() *WORDS.length].split("");
-wrongGuesses=[]
-wordStatus = secretWord.map(ltr===" " ? " " : "_")
-gameStatus = null;
-render()
-};
+
 init();
 function handleClick(evt){
   (evt.target.tagName !== 'BUTTON' || wrongGuesses.includes(letter) || WORDS.includes(leter) return));
