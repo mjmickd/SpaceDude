@@ -10,13 +10,13 @@ const WORDS =[
   "Paparrazi"
  ];
  const IMGS =[
-  "imgs/Lady-Gaga-Meat-Suit-0.jpeg",
- "imgs/Lady-Gaga-Meat-Suit-1.jpeg",
- "imgs/Lady-Gaga-Meat-Suit-2.jpeg",
- "imgs/Lady-Gaga-Meat-Suit-3.jpeg",
- "imgs/Lady-Gaga-Meat-Suit-4.jpeg",
- "imgs/Lady-Gaga-Meat-Suit-5.jpeg",
- "imgs/Lady-Gaga-Meat-Suit-6.jpeg",
+  "imgs/Lady-Gaga-Meat-Suit-0.png",
+ "imgs/Lady-Gaga-Meat-Suit-1.png",
+ "imgs/Lady-Gaga-Meat-Suit-2.png",
+ "imgs/Lady-Gaga-Meat-Suit-3.png",
+ "imgs/Lady-Gaga-Meat-Suit-4.png",
+ "imgs/Lady-Gaga-Meat-Suit-5.png",
+ "imgs/Lady-Gaga-Meat-Suit-6.png",
  ]
  
  
@@ -75,7 +75,7 @@ function handleClick(evt){
 
 function render(){
   wrongGuessesEl.textContent = wordStatus.join('');
-  spaceDude.src =`imgs/Lady-Gaga-Meat-Suit-${wrongGuesses.length}.jpeg`
+  spaceDude.src =`imgs/Lady-Gaga-Meat-Suit-${wrongGuesses.length}.png`
   renderMessage()
 }
 
