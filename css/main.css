@@ -29,8 +29,8 @@ background-image: url("https://images.pexels.com/photos/2319413/pexels-photo-231
 
 
 h1 {
-  color: green;
-  font-size: 40px;
+  color: red;
+  font-size: 60px;
   display:flex;
   justify-content: center;
   align-items: center;

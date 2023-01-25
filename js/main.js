@@ -10,7 +10,7 @@ const WORDS =[
   "Paparrazi"
  ];
  const IMGS =[
- "imgs/Lady-Gaga-Meat-Suit-0.jpeg",
+  "imgs/Lady-Gaga-Meat-Suit-0.jpeg",
  "imgs/Lady-Gaga-Meat-Suit-1.jpeg",
  "imgs/Lady-Gaga-Meat-Suit-2.jpeg",
  "imgs/Lady-Gaga-Meat-Suit-3.jpeg",
@@ -22,10 +22,10 @@ const WORDS =[
  
  /*----- state variables -----*/
  ;
- let answer = ""
- let wrongGuesses = []
+ let answer = "";
+ let wrongGuesses = [];
  let wordStatus = null;
- let gameStatus 
+ let gameStatus; 
 
 
 
@@ -81,9 +81,19 @@ function render(){
 
 function getGameStatus(){
   if(!wordStatus.includes("_")) return "W";
-  if(wrongGuesses.length > MAX_WRONG) return "L";
+  if(wrongGuesses.length >= MAX_WRONG) return "L";
   return null;
 }
+
+//render button function 
+//correct turn color, wrong turn color 
+//declare render button function 
+//iterate over our letter elements using forEach
+//declaring a variable called letter = to the iterator .textContent
+//conditional if statement - if wrong letters.includes(letter )
+//className = wrong 
+//else if answer.includes(letter ) = correct 
+//else button.className = ""
 
 function renderMessage(){
   if(gameStatus === "W") {
