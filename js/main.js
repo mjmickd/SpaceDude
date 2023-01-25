@@ -10,13 +10,13 @@ const WORDS =[
   "Paparrazi"
  ];
  const IMGS =[
- "css/imgs/Lady gaga Meat Suit 0 Small Medium.jpeg",
- "css/imgs/Lady gaga Meat Suit 1 Small Medium.jpeg",
- "css/imgs/Lady gaga Meat Suit 2 Medium.jpeg",
- "css/imgs/Lady gaga Meat Suit 3 Medium.jpeg",
- "css/imgs/Lady gaga Meat Suit 4 Medium.jpeg",
- "css/imgs/Lady gaga Meat Suit 5 Medium.jpeg",
- "css/imgs/Lady Gaga Meat Suit OG  Medium.jpeg",
+ "imgs/Lady gaga Meat Suit 0 Small Medium.jpeg",
+ "imgs/Lady gaga Meat Suit 1 Small Medium.jpeg",
+ "imgs/Lady gaga Meat Suit 2 Medium.jpeg",
+ "imgs/Lady gaga Meat Suit 3 Medium.jpeg",
+ "imgs/Lady gaga Meat Suit 4 Medium.jpeg",
+ "imgs/Lady gaga Meat Suit 5 Medium.jpeg",
+ "imgs/Lady Gaga Meat Suit OG  Medium.jpeg",
  ]
  
  
@@ -73,19 +73,16 @@ function handleClick(evt){
   }
 
 
-function render() {
-guessedWord.txtContent = winner.join("")
-spaceMan.src= 'img/spaceman-${wrongGuesses.jpg';
-}
 
 function render(){
   wordGuess.textContent = wordStatus.join('');
-  spaceMan.src ='css/imgs/Lady-gaga-Meat-suit-${wrongGuesses.length}.jpg'
+  spaceMan.src ='css/imgs/Lady-gaga-Meat-Suit${wrongGuesses.length}.jpg'
 }
 
-function answer(evt){
-  
-} render(){
+fuction 
+
+
+render(){
   
 }
 
