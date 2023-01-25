@@ -34,11 +34,13 @@ const guessedEL = document.getElementById('guessed-word');
 
 //what stephanie said 
 const message = document.getElementById('message')
-const wrongGuess = document.getElement('spotLight')
+const wrongGuesses = document.getElement('spotLight')
 //const letterButtons=[...document.querySelectorAll('section > button')]//see Diego's code in chat 
 //const playButton= document.getElementById('playButton')//this was original reset
 //const spaceDude = document.querySelector('img');
   /*----- event listeners -----*/
+  init();
+
   function init(){
   secretWord = WORDS[Math.random() *WORDS.length].split("");
   wrongGuesses=[]
@@ -46,7 +48,7 @@ const wrongGuess = document.getElement('spotLight')
   gameStatus = null;
   render()
   };
-  
+
 document.querySelector("section").addEventListener("click", handleClick)
 playButton.addEventListener("click", init)
   /*----- functions -----*/
@@ -55,8 +57,6 @@ function showImage0(){
   document.getElementById
 }
 
-
-init();
 function handleClick(evt){
   (evt.target.tagName !== 'BUTTON' || wrongGuesses.includes(letter) || WORDS.includes(leter) return));
   console.log(evt.target.textContent)
