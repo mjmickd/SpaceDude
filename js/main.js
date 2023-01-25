@@ -42,10 +42,12 @@ const wrongGuesses = document.getElement('spotLight')
   init();
 
   function init(){
-  secretWord = WORDS[Math.random() *WORDS.length].split("");
+  secretWord = WORDS[Math.floor(Math.random() *WORDS.length)].toUpperCase('').split("");
   wrongGuesses=[]
-  wordStatus = secretWord.map(ltr===" " ? " " : "_")
+  wordStatus = secretWord.map(ltr => ltr===" " ? " " : "_")
   gameStatus = null;
+  console.log (secretWord, 'secret')
+  console.log(wordStatus, "Word Status")
   render()
   };
 
@@ -58,22 +60,18 @@ function showImage0(){
 }
 
 function handleClick(evt){
-  (evt.target.tagName !== 'BUTTON' || wrongGuesses.includes(letter) || WORDS.includes(leter) return));
-  console.log(evt.target.textContent)
-    const letter = evt.target.textContent
+ const ltr = evt.target.textContent
+  if (evt.target.tagName !== 'BUTTON' || wrongGuesses.includes(ltr)) return
     if(secretWord.includes(ltr)){
-      secretWord.forEach((char, idx) =>{
-        if(char === ltr ) wordStatus[idx] = letter
+      secretWord.forEach(function(char, idx){
+        if(char === ltr ) wordStatus[idx] = ltr
       })
-    } else {
-   wrongGuesses.push(letter)   
+    } else { 
+      wrongGuesses.push(ltr)   
+    }
+  render();
   }
-  render()
-};
 
-function init() {
-  console.log("hello")
-};
 
 function render() {
 guessedWord.txtContent = winner.join("")
@@ -81,6 +79,28 @@ spaceMan.src= 'img/spaceman-${wrongGuesses.jpg';
 }
 
 function render(){
-  answerBoxEls.textContent = wordStatus.join('');
+  wordGuess.textContent = wordStatus.join('');
   spaceMan.src ='css/imgs/Lady-gaga-Meat-suit-${wrongGuesses.length}.jpg'
 }
+
+function answer(evt){
+  
+} render(){
+  
+}
+
+// what I found online for a dash function - don't know if it is correct //
+
+//function render() { 
+//for (i = 0; i < chosenWord.length; i++) {
+  //if (chosenWord.charAt(i) == " ") {
+  //  dashes += " ";
+  //} else {
+  //  dashes += "-";
+  //}
+//}
+//}
+
+
+// function render(){
+  spaceman.src = '' 
