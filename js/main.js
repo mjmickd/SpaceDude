@@ -16,9 +16,9 @@ const WORDS =[
  
  /*----- state variables -----*/
  ;
- let answer: ""
+ let answer = ""
  let mistakes = 0
- let wrongGuesses =[]
+ let wrongGuesses = []
  let wordStatus = null;
  let gameStatus 
 
@@ -70,4 +70,7 @@ guessedWord.txtContent = winner.join("")
 spaceMan.src= 'img/spaceman-${wrongGuesses.jpg';
 }
 
-f
+function render(){
+  answerBoxEls.textContent = wordStatus.join('');
+  spaceMan.src ='css/imgs/Lady-gaga-Meat-suit-${wrongGuesses.length}.jpg'
+}
