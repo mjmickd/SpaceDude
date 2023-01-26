@@ -37,8 +37,11 @@ const guessedEL = document.getElementById('guessed-word');
 const messageEl = document.getElementById('message');
 const wrongGuessesEl = document.getElementById('spotLight');
 const playAgainEl = document.getElementById('playButton');
-//const letterButtons=[...document.querySelectorAll('section > button')]//see Diego's code in chat 
+//const letter=[...document.getElementsById('letterButton')] 
 const spaceDude = document.querySelector('img');
+const letterButton = [...document.querySelectorAll('main > button')]
+//const letterButtonEl = document.querySelectorAll('letterButton')
+
 /*----- event listeners -----*/
 document.querySelector("section").addEventListener("click", handleClick);
 playAgainEl.addEventListener("click", init);
@@ -92,6 +95,8 @@ function render(){
 //else if answer.includes(letter ) = correct 
 //else button.className = ""
 
+
+
 function renderMessage(){
   if(gameStatus === "W") {
     messageEl.textContent = "YAAAS you win"
@@ -103,5 +108,16 @@ messageEl.textContent = `${MAX_WRONG - wrongGuesses.length} remain, good luck`
 }
 render() 
   
+
+//function renderButtonStyle () {
+//letterButtons.forEach(function(btn){
+  //const letter = btn.textContent;
+  //if(wrongGuesses.includes(letter))){
+   // btn.className = 'incorrect'
+  //} else if (wordStatus.includes(letter)){
+   // btn.className = correct
+  //} else { btn.className = ' '}
+//})
+//}
 
 
