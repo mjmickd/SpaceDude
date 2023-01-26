@@ -74,7 +74,7 @@ function handleClick(evt){
 
 
 function render(){
-  wrongGuessesEl.textContent = wordStatus.join('');
+  wrongGuessesEl.textContent = wordStatus.join(' ');
   spaceDude.src =`imgs/Lady-Gaga-Meat-Suit-${wrongGuesses.length}.png`
   renderMessage()
 }

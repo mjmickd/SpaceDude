@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway' , sans-serif;
+  
 }
 header {
   font-size: 3vmin;
@@ -11,7 +12,6 @@ header {
 }
 
 body {
-
   font-family: 'Raleway' , sans-serif;
   background-image: url("https://images.pexels.com/photos/2319413/pexels-photo-2319413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   height: absolute;
@@ -20,13 +20,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .bg {
-background-size: cover;
-background-attachment: fixed;
-height: 100%;
+background-size: auto;
+background-attachment: auto;
 background-image: url("https://images.pexels.com/photos/2319413/pexels-photo-2319413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
-
 
 h1 {
   margin-top: 5vmin;
@@ -57,8 +56,7 @@ img{
 
 #main-image {
 display:center;
-height: 50%;
-
+height: 30%;
 }
 
 h4{
@@ -71,9 +69,12 @@ h4{
   margin-right:40%;
   margin-bottom: 1vmin;
 }
-.spotLight{
+#spotLight{
   color:white;
-  font-size:
+  font-size: 40px;
+  margin-left: 35%;
+  margin-top: 2vmin;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #letter-button{
@@ -113,11 +114,6 @@ button{
   border: 0.1vmin solid white;
   color: red;
   align-items:center; 
-  position:bottom;
-
-}
-main {
-    display: grid;
 }
 
 main * {
@@ -126,9 +122,8 @@ main * {
   align-items: center;
 }
 
-p{
-color: pink;
-text-align: center;
-margin: auto;
+#message{
+  color: green;
+
 }
 
