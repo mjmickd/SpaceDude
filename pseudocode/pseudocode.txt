@@ -1,7 +1,7 @@
 	/*----- constants -----*/
     array of secret words 
     max wrong guesses
-
+    images
 
 /*----- state variables -----*/
 answer 
@@ -16,19 +16,23 @@ letter button
 message 
 play again button 
 
+/*----- event listeners -----*/
+    letter buttons 
+    play again button 
 
+/*----- functions -----*/
+    initializing function 
 
-	/*----- event listeners -----*/
-letter buttons 
-play again button 
+    a function that will allow you to 
+        recognize if the letter is correct
+        within the word or not 
 
+    a function that will allow you to play again 
+    
+    a win/lose function 
 
-	/*----- functions -----*/
-    player choice will let us know if the players choice is correct or 
-    incorrect for the secret code. 
+    a render function 
 
-    when players run out of guesses the game will be over. 
-
-    As each player misses a letter an image disappears 
+    As each player misses a letter an image appears
 
     if the player successfully guesses word, they are declared winner. 
