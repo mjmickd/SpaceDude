@@ -13,7 +13,10 @@
     -Once you've completed the game by either winning or losing, you may click the play again button to restart the game over. 
 
 ### Game Look 
-    ![Game Start](imgs/Lady-Gaga-Start.png)
+    ![Game Start]
+    
+    (imgs/Lady-Gaga-Start.png)
+<img width="1206" alt="Lady-Gaga-Start" src="https://user-images.githubusercontent.com/108112112/215137671-e0cc342a-b30e-423b-9d48-d22fffd3c3e0.png">       
 
     ![Game Lost](imgs/Lady-Gaga-Lost.png)
 
