@@ -24,7 +24,7 @@
 
 #### Getting Started 
 
-click to play: [] ()
+click to play: [SpaceDude] (https://mjmickd.github.io/SpaceDude/)
 
 ### Icebox Features
     -I would like to add a catergory feature that there could be other artists incoporated into the game 
