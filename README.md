@@ -15,6 +15,7 @@ to appear on the screen.
 ### Look of the Game 
 <img width="1227" alt="Screen Shot 2023-01-26 at 8 05 02 PM" src="https://user-images.githubusercontent.com/108112112/215010355-cf43adc4-adea-49b2-b9d8-b0642a0f420d.png">
 
+<img width="1206" alt="Screen Shot 2023-01-26 at 8 04 30 PM" src="https://user-images.githubusercontent.com/108112112/215010483-d17a4183-3e5e-45e6-a3f8-ee088bf93d0e.png">
 
  <img width="1211" alt="Screen Shot 2023-01-26 at 8 04 46 PM" src="https://user-images.githubusercontent.com/108112112/215010373-65415a9a-3f4c-4fad-9c32-9e442bf0b684.png">
 
