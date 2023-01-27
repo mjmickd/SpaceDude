@@ -13,9 +13,11 @@ to appear on the screen.
 -If you get more than 6 wrong guesses she will appear 
 - If you guess before that then you win.
 ### Look of the Game 
-![Game Start](../../Desktop/Screen%20Shot%202023-01-26%20at%208.04.30%20PM.png)
+![Game Start]
+(../../Desktop/Screen%20Shot%202023-01-26%20at%208.04.30%20PM.png)
 
-![Game lost](imgs/Screen%20Shot%202023-01-26%20at%208.05.02%20PM.png)
+![Game lost]
+(imgs/Screen%20Shot%202023-01-26%20at%208.05.02%20PM.png)
 ### Technologies Used
 - JavaScript
 - HTML
