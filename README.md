@@ -19,6 +19,7 @@
 <img width="1206" alt="Lady-Gaga-Start" src="https://user-images.githubusercontent.com/108112112/215137671-e0cc342a-b30e-423b-9d48-d22fffd3c3e0.png">       
 
     ![Game Lost](imgs/Lady-Gaga-Lost.png)
+    <img width="1227" alt="Lady-Gaga-Lost" src="https://user-images.githubusercontent.com/108112112/215137978-e90ad291-48e7-44ac-846e-e385b94d6eac.png">
 
 #### Technologies Used 
     - JavaScript
