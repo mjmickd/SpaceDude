@@ -13,12 +13,7 @@ to appear on the screen.
 -If you get more than 6 wrong guesses she will appear 
 - If you guess before that then you win.
 ### Look of the Game 
-![Game Start]
 
-<img width="1206" alt="Screen Shot 2023-01-26 at 8 04 30 PM" src="https://user-images.githubusercontent.com/108112112/215016606-a689a2cb-6265-4ce2-8f52-2f026699f991.png">
-
-![Game lost]
-<img width="1227" alt="Screen Shot 2023-01-26 at 8 05 02 PM" src="https://user-images.githubusercontent.com/108112112/215016654-14deffa6-203a-485a-a48c-40e83e6ad771.png">
 
 ### Technologies Used
 - JavaScript
