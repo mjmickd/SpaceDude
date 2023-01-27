@@ -1,21 +1,26 @@
 	/*----- constants -----*/
-array of secret words 
+    array of secret words 
+    max wrong guesses
 
 
-	/*----- state variables -----*/
-number of guesses 
-winner 
-length of guess 
-hint
+/*----- state variables -----*/
+answer 
+wrongGuesses 
+wordStatus
+gameStatus
 
 	/*----- cached elements  -----*/
-word 
+guessed word 
 image 
-letter 
+letter button
+message 
+play again button 
+
 
 
 	/*----- event listeners -----*/
-clicking for correct letter 
+letter buttons 
+play again button 
 
 
 	/*----- functions -----*/
